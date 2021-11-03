@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hn(Headline 태그)</title>
+    <!-- 
+        CSS (Cascading Style Sheets)
+        : HTML 문서에 스타일을 적용하기 위해 사용한다.
+            사용 방법 1. <style> 태그를 <head> 영역에 선언한 후 해당 속성을 작성한다.
+            사용 방법 2. 스타일을 적용할 태그에 style 속성으로 적용한다.
+        아래 스타일은 h1, h2, span 태그 선택자를 통해 해당 문서의 태그를 선택하여 스타일을 설정한다.
+        border는 테두리의 스타일을 지정하는 속성으로 두께, 색상을 지정하고 있다.
+     -->
+     <style>
+         h1 { border:5px solid red;}
+         h2 { border:1px solid green;}
+         span { border:1px solid blue;}
+     </style>
+</head>
+<body>
+    <!-- 
+        Hn 태그
+        · 제목(헤드라인)을 표시할 때 사용하는 태그
+        · 블록 엘리먼트(Block Elemnet)로 세로형 배치
+        · 콘텐츠의 크기에 상관없이 무조건 하나의 블록을 차지
+        · H1 ~ H6 까지 있고 숫자가 작을수록 텍스트를 크게 표현
+     -->
+    <h1>블록 엘리먼트 1</h1>
+    <!-- 인라인 엘리먼트 (Inline Element) : 가로형 배치 -->
+    <span>span 태그 1</span>
+    <span>span 태그 2</span>
+    <span>span 태그 3</span>
+    <span>span 태그 1</span>
+    <span>span 태그 2</span>
+    <span>span 태그 3</span>
+
+    <h1>블록 엘리먼트 2</h1>
+    <span>span 태그 1</span>
+    <span>span 태그 2</span>
+    <span>span 태그 3</span>
+
+    <hr/>
+    <h1>제목 1</h1>
+    <h2>제목 2</h2>
+    <!-- 
+        dotted : 테두리를 점선으로 표시
+        double : 테두리를 이중실선으로 표시
+     -->
+    <h3 style = "border:1px dotted purple;">제목 3</h3>
+    <!-- 
+        text-align : 텍스트를 정렬하는 속성
+     -->
+    <h4 style = "text-align:right;">제목 4</h4>
+    <h5 style = "text-align:center;">제목5</h5>
+    <!-- 가로, 세로 크게에 의해 큰 박스와 같이 표현 -->
+    <h6 style = "border:2px double black; width:500px; height:300px; background:coral;">제목 6</h6>
+</body>
+</html>

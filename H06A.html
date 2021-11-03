@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H06A.html</title>
+</head>
+<body>
+    <h2>A 태그</h2>
+    <!-- 
+        A 태그를 통해 링크를 걸대 target 속성은 _self가 디폴트이므로 생략 가능하다.
+        현재 경로를 표현할때 ./를 생략할 수 있다.
+        즉, 아래의 2개 링크는 완전히 동일하다.
+     -->
+    <a href="H04DlDtDd.html" target="_self">DL 예제로 이동하기 1</a>
+    <a href="./H04DlDtDd.html">DL 예제로 이동하기 2</a>
+    <br/>
+
+    <!-- target이 _blank일 경우 새 탭으로 페이지가 열린다. -->
+    <a href="http://naver.com" target="_blank">네이버로 이동하기</a>
+    <h2>쿠팡 상품 바로가기</h2>
+    <a href="https://www.coupang.com/vp/products/5333666739?itemId=7792135919&vendorItemId
+    =75082148700&sourceType=srp_product_ads&clickEventId=115adceb-48bc-436c-9245-787d5cf47
+    ba0&korePlacement=15&koreSubPlacement=1&q=%EB%A7%88%EC%8A%A4%ED%81%AC&itemsCount=36&
+    searchId=fd6bb9b448c242c2a16469ca438b78d8&rank=0&isAddedCart="target="_blank">
+    쿠팡 마스크 보기
+    </a>
+
+    <h2>상대경로와 절대경로 알아보기</h2>
+    <!-- 
+        링크를 걸때 경로 알아보기
+        절대경로(절대주소)
+        : 현재의 위치가 바뀌더라도 주소가 변하지 않는 절대적인 주소를 말한다.
+          주로 http://를 통해 외부 링크를 걸거나 /(홈 디렉토리로 root 경로를 의미)로
+          시작하는 링크를 사용한다.
+        상대경로(상대주소)
+        : 현재 페이지의 위치에 따라 상대적으로 변하는 주소를 말한다.
+        ./ → 현재경로를 의미한다. 현재경로인 경우 생략이 가능하다.
+        ../ → 1단계 상위 디렉토리를 의미한다.
+        ../../ → 2단계 상위 디렉토리를 의미한다.
+     -->
+    <h3>상대경로로 링크 걸기</h3>
+    <ul><!-- 상대경로인 경우 ./부터 시작한다. -->
+        <li><a href="SubFolder1/SubFile1.html">서브파일 1 바로가기</a></li>
+        <li><a href="./SubFolder1/SubFolder2/SubFile2.html">서브파일 2 바로가기</a></li>
+    </ul>
+    
+    <h3>절대경로로 링크 걸기</h3>
+    <ul><!-- 절대경로인 경우 /부터 시작한다. -->
+        <li><a href="/SubFolder1/SubFile1.html">서브파일 1 바로가기</a></li>
+        <li><a href="/SubFolder1/SubFolder2/SubFile2.html">서브파일 2 바로가기</a></li>
+    </ul>
+
+    <!--
+        A 태그에 이름을 지정하는 것을 앵커(Ancher)라고 한다.
+        <a href="앵커명">형태로 사용하고, 해당 페이지내에서 특정한 위치로 이동시키게 된다.
+        앵커명없이 #만 사용하면 페이지의 최상단으로 이동한다.
+        쇼핑몰의 Top 바로가기 버튼을 이렇게 구현한다.
+     -->
+    <h3>A 태그를 이용해서 페이지 내 특정 위치로 이동하기</h3>
+    <a href="#bottom1">페이지 내 name="bottom1"으로 이동하기</a> <br>
+    <a href="#bottom2">페이지 내 name="bottom2"으로 이동하기</a>
+
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <h3>여기는 bottom1 입니다.</h3>
+    <a name="bottom1">난 bottom1</a>
+
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <h3>여기는 bottom2 입니다.</h3>
+    <a name="bottom2">난 bottom2</a>
+    <br />
+    <a href="#bottom1">bottom1 바로가기</a>
+    <br />
+    <a href="#">최상단 바로가기</a>
+</body>
+</html>
